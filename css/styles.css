@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+/* 
+.header img {
+    height: 30vh;
+    width: 100vw;
+} */
