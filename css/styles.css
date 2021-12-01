@@ -6,11 +6,14 @@ body {
   text-align: center;
   justify-content: center;
   color: #ffffff;
-  background-color: #B8E4F0
+  background: url("https://media.giphy.com/media/jNYUeDwoUoloEswJm8/giphy.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 span {
-    color: #000000;
+    color: black;
 }
 /* FORM */
 form {
@@ -24,6 +27,8 @@ form {
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
     width: 70vw;
+    margin-bottom: 5vh;
+    border-radius: 3.5vw;
 }
 form div {
     margin-bottom: 1.2vh;
@@ -32,6 +37,9 @@ form input, form select {
     border-radius: 7px;
     border: 0;
     width: 90%;
+}
+form span {
+    color: red;
 }
 form input.submit {
     width: 30%;
@@ -49,7 +57,7 @@ form input.submit {
     text-decoration: none;
     border: 0;
     position: absolute;
-    left: 40%;
+    left: 35%;
     bottom: 5%;
   }
   

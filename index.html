@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSI FORM</title>
 
+    <link rel="shortcut icon" href="csi.png">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
@@ -32,21 +34,23 @@
     </div>
 
     <h1> <span style="font-size: 80px;">&alpha; </span><span>Geek</span> </h1> 
-        <form action="index.php" class="slide-right" method="POST">
+        <form action="index.php" class="slide-right" onsubmit="return validate();" method="POST">
             <div>
                 <p>Name:</p> 
-                <input name="name" type="text">
+                <input name="name" id="name" type="text">
+                <span id="checkname"></span>
             </div>
             <br>
             <div>
                 <p>JNTU No: </p> 
-                <input name="jntuno" type="text">
+                <input name="jntuno" id="jntuno" type="text">
+                <span id="checkjntu"></span>
             </div>
             
             <br>
             <div>
                 <p>Email ID: </p> 
-                <input name="email" type="email">
+                <input name="email" id="email" type="email" required>
             </div>
             
             <br>
@@ -67,9 +71,16 @@
                 </select>
             </div>
 
+            <br>
+            <div>
+                <p>Contact Number: </p> 
+                <input name="phno" id="phno" type="number">
+                <span id="checknum"></span>
+            </div>
+
             <input type="submit" class="submit">
         </form>
 </body>
 
-<script src="index.js"></script>
+<script src="css/index.js"></script>
 </html>
