@@ -33,7 +33,7 @@ form input, form select {
     width: 90%;
 }
 form input.submit {
-    width: 20%;
+    width: 30%;
     background: #0048ff;
     background-image: -webkit-linear-gradient(top, #0048ff, #392bb8);
     background-image: -moz-linear-gradient(top, #0048ff, #392bb8);
