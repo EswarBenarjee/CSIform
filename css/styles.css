@@ -14,7 +14,7 @@ span {
 }
 /* FORM */
 form {
-    background-color: #7267CB;
+    background-color: blueviolet;
     background: linear-gradient(direction, purple, red, blue);
     position: relative;
     text-align: left;
