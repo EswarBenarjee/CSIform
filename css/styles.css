@@ -6,6 +6,7 @@ body {
   text-align: center;
   justify-content: center;
   color: #ffffff;
+  background-color: #B8E4F0
 }
 
 span {
@@ -13,7 +14,7 @@ span {
 }
 /* FORM */
 form {
-    background-color: blueviolet;
+    background-color: #6E3CBC;
     background: linear-gradient(direction, purple, red, blue);
     position: relative;
     text-align: left;
