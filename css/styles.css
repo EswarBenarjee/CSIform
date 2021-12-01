@@ -5,8 +5,6 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: blueviolet;
-  background: linear-gradient(direction, purple, red, blue);
   color: #ffffff;
 }
 
@@ -15,6 +13,8 @@ span {
 }
 /* FORM */
 form {
+    background-color: blueviolet;
+    background: linear-gradient(direction, purple, red, blue);
     position: relative;
     text-align: left;
     margin-left: 16vw;
