@@ -32,21 +32,21 @@
     </div>
 
     <h1> <span style="font-size: 80px;">&alpha;</span> Geek </h1> 
-        <form action="index.php" class="slide-right" method="POST">
+        <form action="" class="slide-right">
             <div>
                 <p>Name:</p> 
-                <input name="name" type="text">
+                <input type="text">
             </div>
             <br>
             <div>
                 <p>JNTU No: </p> 
-                <input name="jntuno" type="text">
+                <input type="text">
             </div>
             
             <br>
             <div>
                 <p>Email ID: </p> 
-                <input name="email" type="email">
+                <input type="email">
             </div>
             
             <br>
@@ -73,5 +73,4 @@
             <input type="submit" class="submit">
         </form>
 </body>
-<script src="index.js"></script>
 </html>
