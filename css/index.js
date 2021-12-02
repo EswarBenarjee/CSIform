@@ -11,7 +11,6 @@ function validate() {
     }
     var jntuc = /[0-9A-Za-z]{10}/;
     var jntu = document.getElementById("jntuno").value;
-    var flag= 0 ;
     if(jntuc.test(name)) {
         document.getElementById("jntuno").style.border = 0;
         document.getElementById("checkjntu").innerHTML = "";
@@ -22,7 +21,6 @@ function validate() {
     }
     var pv = /[0-9]{10}/;
     var phno = document.getElementById("phno").value;
-    var flag= 0 ;
     if(pv.test(phno)) {
         document.getElementById("phno").style.border = 0;
         document.getElementById("checknum").innerHTML = "";
@@ -31,8 +29,32 @@ function validate() {
         document.getElementById("checknum").innerHTML = "<br>Enter only numbers for Contact number";
         flag = 1;
     }
+    var mem = document.getElementById("cmember").value;
+    if(mem == 'n') {
+        document.getElementById("non-member").style.display = "block";
+        document.getElementById("tranid").value = '';
+        var f = check();
+        if(!f) {
+          document.getElementById("tranid").style.border = "2px solid red";
+          document.getElementById('trancheck').innerHTML = "Please enter Transaction ID";
+          flag = 1;
+        } else {
+          document.getElementById("tranid").style.border = "";
+          document.getElementById('trancheck').innerHTML = "";
+        }
+    } else {
+        document.getElementById("non-member").style.display = "none";
+    }
 
     if(flag==1) {
         return false;
     }
+}
+
+function check() {
+  var tranid = document.getElementById("tranid").value;
+  if(tranid == '') {
+    return false;
+  }
+  return true;
 }

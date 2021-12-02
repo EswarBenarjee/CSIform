@@ -60,7 +60,7 @@ form input.submit {
     left: 35%;
     bottom: 5%;
   }
-  
+
   .submit:hover {
     background: #ff00ff;
     background-image: -webkit-linear-gradient(top, #ff00ff, #392bb8);
